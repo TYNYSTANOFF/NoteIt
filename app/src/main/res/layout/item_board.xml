@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Пропустить"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_skip"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="NoteIt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_skip"
+        android:id="@+id/tv_noteit_title"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_noteit_title"
+        android:layout_marginTop="32dp"
+        android:id="@+id/iv_lottie"
+        android:layout_height="264dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Организация"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_lottie"
+        android:id="@+id/tv_text_title"
+        android:layout_marginTop="46dp"
+        android:textSize="28sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="Организация n fvjf jfkdvfkjvkjnfkjnkfnjkзаметок итдитп. Организуйте мысли итд"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_title"
+        android:id="@+id/tv_text"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+android:layout_marginTop="68dp"
+        android:id="@+id/btn_start"
+        app:cornerRadius="12dp"
+        android:text="Начать"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="64dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
